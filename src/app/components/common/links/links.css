@@ -1,0 +1,10 @@
+.small-link {
+  display: inline-block;
+  line-height: 30px;
+  border-bottom: 1px solid #000;
+  padding-right: 10px;
+}
+
+.red-button-link {
+  border: 1px solid var(--red);
+}

@@ -1,0 +1,35 @@
+.asset {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.asset-info {
+  flex: 1;
+}
+
+.asset-info__subtitle {
+  margin-bottom: 50px;
+}
+
+.asset-info__graph {
+  margin-bottom: 20px;
+}
+
+.asset-image img {
+  float: right;
+}
+
+@media screen and (max-width: 1320px) {
+  .asset {
+    grid-template-columns: 100%;
+  } 
+  .asset-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .asset-info__graph {
+    width: 100%;
+  }
+}

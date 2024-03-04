@@ -1,0 +1,17 @@
+.main_content {
+  position: relative;
+  margin-top: 100vh;
+  min-height: 100vh;
+  background-color: #fff;
+  z-index: 3;
+}
+
+@media screen and (max-width: 1200px) {
+  .main_content {
+    margin-top: 700px;
+  } 
+}
+
+@media screen and (max-width: 767px) {
+  
+}
