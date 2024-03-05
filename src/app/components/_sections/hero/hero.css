@@ -23,6 +23,7 @@
 .hero-grid__title {
   font-size: 49px;
   line-height: 79px;
+  margin-bottom: 30px;
 }
 
 .hero-grid__quote {
@@ -113,6 +114,7 @@
     font-size: 22px;
     line-height: 36px;
     max-width: 310px;
+    margin-bottom: 20px;
   }
 
   .hero-grid__quote {
