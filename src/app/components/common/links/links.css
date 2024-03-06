@@ -7,4 +7,17 @@
 
 .red-button-link {
   border: 1px solid var(--red);
+  transition: 0.3s;
+}
+
+.red-button-link:hover {
+  background-color: var(--red);
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .red-button-link {
+    font-size: 18px;
+    height: 76px;
+  }
 }

@@ -6,7 +6,7 @@
 
 .styled-list li {
   display: flex;
-  gap: 10px;
+  gap: 18px;
 }
 
 .styled-list__icon {

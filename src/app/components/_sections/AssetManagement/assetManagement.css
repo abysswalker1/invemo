@@ -29,6 +29,24 @@
   margin-bottom: 10px;  
 }
 
+.onboarding-image  {
+  position: relative;
+}
+
+.onboarding-image img {
+  object-fit: contain;
+}
+
+.selection_main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.selection-link {
+  width: 300px;
+}
+
 @media screen and (max-width: 1320px) {
   .asset {
     row-gap: 100px;
@@ -36,25 +54,49 @@
 
   .asset_section {
     flex-direction: column;
-  } 
+  }
+
   .asset-strategies__image {
     display: none;
   }
+
   .infrastructure-list__no-br br {
     display: none;
+  }
+
+  .onboarding-info {
+    order: 2;
+  }
+
+  .selection_main {
+    flex-direction: column;
+    row-gap: 30px;
   }
 }
 
 @media screen and (max-width: 767px) {
+  .asset {
+    row-gap: 80px;
+  }
+
+  .asset_section {
+    row-gap: 30px;
+  }
+
   .asset-strategies__subtitle {
     margin-bottom: 30px;
   }
 
   .asset-strategies__graph {
     width: 100%;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
+
   .infrastructure-list__no-br br {
     display: block;
+  }
+
+  .selection-link {
+    width: 100%;
   }
 }

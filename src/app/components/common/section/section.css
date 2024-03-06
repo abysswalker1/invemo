@@ -21,3 +21,9 @@
     margin-bottom: 20px;
   } 
 }
+
+@media screen and (max-width: 500px) {
+  .section-title {
+    font-size: 22px;
+  }
+}

@@ -9,6 +9,11 @@ import codeImage from '/public/code.png'
 import './assetManagement.css';
 import MovingImage from './../../moving-image/MovingImage';
 import InfrastructureList from './styled-lists/InfrastructureList';
+import onboardinImage from '/public/onboarding-image.png';
+import OnboardingList from './styled-lists/OnboardingList';
+import RedButtonLink from '../../common/links/RedButtonLink';
+import StructuredNoteTable from './selection-tables/StructuredNoteTable';
+import ManagedAccountTable from './selection-tables/ManagedAccountTable';
 
 const AssetManagement: FC = () => {
 
@@ -32,7 +37,7 @@ const AssetManagement: FC = () => {
           <p className='paragraph'>Market making: middle-risk. Volatility trading<br/>of large-cap altcoins versus stablecoins</p>
 
           <Image src={thirdGraph} className='asset-strategies__graph' alt=''/>
-          <p className='paragraph'>Countertrend: high-risk. Buying<br/>low and selling high of BTC & ETH</p>
+          <p>Countertrend: high-risk. Buying<br/>low and selling high of BTC & ETH</p>
           </div>
 
           <div className="asset-strategies__image">
@@ -48,9 +53,27 @@ const AssetManagement: FC = () => {
             <div className="asset-infrastructure__feature">
               <p className="subtitle">Sofware features include</p>
             </div>
-            
             <InfrastructureList />
           </div>
+        </div>
+
+        <div className="asset-onboarding asset_section">
+          <div className="onboarding-info">
+            <h3>Personal & professional client setup & onboarding</h3>
+            <OnboardingList />
+          </div>
+          <div className="onboarding-image">
+            <Image src={onboardinImage}  alt='' />
+          </div>
+        </div>
+
+        <div className="selection">
+          <h3>Selection of investment vehicles</h3>
+          <div className="selection_main">
+            <StructuredNoteTable />
+            <ManagedAccountTable />
+          </div>
+          <RedButtonLink href='/' text="Contact us" className='selection-link'/>
         </div>
       </div>
     </Section>

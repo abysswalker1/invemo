@@ -1,4 +1,3 @@
-'use client';
 import React, {FC} from 'react';
 import { IWithClass, IListItem } from '../../../types';
 import cn from 'classnames';
@@ -15,7 +14,7 @@ const StyledList: FC<Props> = (props) => {
       {props.items.map((item, index)=> {
         return (
           <li className={item.className} key={`${props.className}-${index}`} >
-            <Image src={item.image} alt='/'/>
+            <Image src={item.image} alt='/' className='styled-list__icon'/>
             <p>{item.firstString}<br/>{item.secondString}</p>
           </li>
         )
