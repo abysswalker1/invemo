@@ -1,11 +1,9 @@
 'use client';
-import React from 'react';
+import {FC} from 'react';
 import Hamburger from 'hamburger-react';
-
 import './mobile-menu.css'
 
-const Burger = () => {
-
+const Burger: FC = () => {
   return (
     <div className="burger-btn">
       <Hamburger />

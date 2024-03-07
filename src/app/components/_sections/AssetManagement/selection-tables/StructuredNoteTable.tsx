@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import Table from '../../../common/table/Table';
-import { TableRow } from '../../../common/table/Table';
+import Table from '../../../ui/table/Table';
+import { TableRow } from '../../../ui/table/Table';
 
 const StructuredNoteTable: FC = () => {
   const rows: TableRow[] = [

@@ -1,12 +1,12 @@
-import React from 'react';
+import {FC} from 'react';
 import MainHeader from '../../header/MainHeader';
-import RedButtonLink from '../../common/links/RedButtonLink';
+import RedButtonLink from '../../ui/links/RedButtonLink';
 import Bg from '/public/hero.jpg';
 import Image from 'next/image';
 
 import './hero.css';
 
-const Hero: React.FC = () => {
+const Hero: FC = () => {
   return (
     <div className='hero'>
       <div className="hero_content">
@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
       </div>
-      <Image src={Bg} fill={true} alt='' className='hero_bg'/>
+      <Image src={Bg} fill={true} alt='' className='hero_bg' />
     </div>
   );
 };

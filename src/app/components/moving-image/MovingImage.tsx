@@ -1,5 +1,5 @@
 'use client';
-import {FC, useRef} from 'react';
+import {FC, useRef, memo} from 'react';
 import Image, { StaticImageData } from 'next/image';
 import './moving-image.css';
 import cn from 'classnames';
@@ -11,7 +11,7 @@ interface Props extends IWithClass {
   image: StaticImageData
 }
 
-const MovingImage: FC<Props> = (props) => {
+const MovingImage: FC<Props> = memo((props) => {
   const ref = useRef(null);
   const isInView = useInView(ref);
   const { scrollYProgress } = useScroll();
@@ -25,13 +25,12 @@ const MovingImage: FC<Props> = (props) => {
   return (
     <div className={ cn('moving-image', props.className) } ref={ref}>
       <motion.div
-        ref={ref} 
         style={{ translateY: useTransform(smoothScrollProgress, [0, 1], imageTransfrom) }}
       >
         <Image src={props.image} alt='' />
       </motion.div>
     </div>
   );
-};
+});
 
 export default MovingImage;

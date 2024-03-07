@@ -1,15 +1,15 @@
-import React from 'react';
-import SmallLink from '../../common/links/SmallLink';
+import {FC} from 'react';
+import SmallLink from '../../ui/links/SmallLink';
 import { ILink } from '../../../types';
 import Burger from '../../mobile-menu/Burger';
 
 import './nav.css';
 
-type Props = {
+interface Props {
   links: ILink[]
 }
 
-const Nav: React.FC<Props> = ({ links }) => {
+const Nav: FC<Props> = ({ links }) => {
   return (
     <div className="header-navigation">
       <nav>

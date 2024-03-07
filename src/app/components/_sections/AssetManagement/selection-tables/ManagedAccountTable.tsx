@@ -1,7 +1,7 @@
-import React from 'react';
-import Table, { TableRow } from '../../../common/table/Table';
+import {FC} from 'react';
+import Table, { TableRow } from '../../../ui/table/Table';
 
-const ManagedAccountTable = () => {
+const ManagedAccountTable: FC = () => {
   const rows: TableRow[] = [
     {cells: ['Product type', 'Crypto exchange managed account'], isLarge: true},
     {cells: ['Deposit & custody', 'Client’s crypto exchange account'], isLarge: true},

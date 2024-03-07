@@ -3,7 +3,7 @@ import first from '/public/onboarding-1.svg';
 import second from '/public/onboarding-2.svg';
 import third from '/public/onboarding-3.svg';
 import fourth from '/public/onboarding-4.svg';
-import StyledList from '../../../common/styled-list/StyledList';
+import StyledList from '../../../ui/styled-list/StyledList';
 
 const OnboardingList: FC = () => {
   const items = [

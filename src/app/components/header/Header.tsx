@@ -1,12 +1,12 @@
-import React, { ReactNode } from 'react';
+import { ReactNode, FC } from 'react';
 
 import './header.css';
 
-type Props =  {
+interface Props {
   children: ReactNode
 }
 
-const Header: React.FC<Props> = (props) => {
+const Header: FC<Props> = (props) => {
   return (
     <header>
       <div className="container">

@@ -1,12 +1,12 @@
 import React, {ReactNode, FC} from 'react';
 import cn from 'classnames';
-
 import './section.css';
+import { IWithClass } from '../../../types';
 
-type Props = {
+interface Props extends IWithClass {
   title: string
-  className?: string
   children: ReactNode
+  id: string
 }
 
 const Section: FC<Props> = (props) => {

@@ -1,9 +1,9 @@
-import React from 'react';
+import {FC} from 'react';
 import Header from "./Header";
-import Logo from "../common/logo/Logo";
+import Logo from "../ui/logo/Logo";
 import Nav from "./nav/Nav";
 
-const MainHeader: React.FC = () => {
+const MainHeader: FC = () => {
   const mainLinks = [
     {text: 'Asset Menagement', href: '#'},
     {text: 'Exchange', href: '#'},

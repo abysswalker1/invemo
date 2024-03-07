@@ -1,12 +1,12 @@
-import React from 'react';
-import StyledList from '../../../common/styled-list/StyledList';
+import {FC} from 'react';
+import StyledList from '../../../ui/styled-list/StyledList';
 import first from '/public/infr1.svg';
 import second from '/public/infr2.svg';
 import third from '/public/infr3.svg';
 import fourth from '/public/infr4.svg';
 import fifth from '/public/infr5.svg';
 
-const InfrastructureList = () => {
+const InfrastructureList: FC = () => {
   const items = [
     {
       image: first, 

@@ -64,7 +64,7 @@
 
 
 
-@media screen and (max-width: 1320px){
+@media screen and (max-width: 1320px) {
   .hero-grid__quote {
     max-width: 255px;
   }
@@ -121,5 +121,15 @@
     max-width: 230px;
     justify-self: unset;
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .hero-links__item {
+    flex: 1;
+  }
+  .hero-links__item .btn {
+    width: auto;
+    font-size: 16px;
   }
 }
