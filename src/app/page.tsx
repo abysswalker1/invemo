@@ -6,6 +6,12 @@ import Partners from './components/_sections/Partners/Partners';
 import Careers from "./components/_sections/Careers/Careers";
 import Contact from "./components/_sections/Conatcts/Contact";
 import Footer from "./components/footer/Footer";
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Invemo',
+  description: '...',
+}
 
 export default function Home() {
   return (
