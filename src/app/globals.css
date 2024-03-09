@@ -1,6 +1,7 @@
 :root {
   --red: rgb(227, 13, 26); 
-  --border: 1px solid #808080
+  --gray: #DFDFDF;
+  --border: 1px solid #808080;
 }
 
 * {
@@ -42,12 +43,18 @@ a {
   display: block;
 }
 
+button {
+  background: none;
+  border: none;
+}
+
 .btn {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 83px;
   font-size: 25px;
+  width: 100%;
 }
 
 .container {

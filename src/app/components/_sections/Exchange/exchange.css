@@ -1,0 +1,85 @@
+.exchange {
+  display: flex;
+  column-gap: 110px;
+}
+
+.exchange .styled-list {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-auto-flow: column;
+}
+
+.exchange .styled-list li {
+  flex-direction: row;
+}
+
+.small-list-icon img {
+  width: 40px;
+  height: 40px;
+  margin: 0 15px;
+}
+
+.exchange-images {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+}
+
+@media screen and (max-width: 1320px) {
+  .exchange {
+    flex-direction: column;
+    row-gap: 70px;
+  }
+
+  .exchange-images {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .small-list-icon img {
+    margin: 0 10px;
+  }
+
+  .exchange-images {
+    column-gap: 40px;
+    padding: 30px;
+  }
+
+  .exchange-images img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .exchange {
+    row-gap: 40px;
+  }
+
+  .exchange .styled-list {
+    grid-template-columns: 100%;
+    grid-template-rows: unset;
+    grid-auto-flow: unset;
+  }
+
+  .small-list-icon img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+  }
+
+  .exchange-images {
+    flex-direction: column;
+  }
+
+  .exchange-images img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .exchange-images {
+    padding: 20px;
+    row-gap: 50px;
+  }
+}

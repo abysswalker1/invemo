@@ -6,6 +6,7 @@
 
 .styled-list li {
   display: flex;
+  align-items: center;
   gap: 18px;
 }
 
@@ -21,6 +22,7 @@
 
   .styled-list li {
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .styled-list__icon {

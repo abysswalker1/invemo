@@ -12,7 +12,7 @@ interface Props extends IWithClass {
 const Section: FC<Props> = (props) => {
 
   return (
-    <section className={ cn('section', props.className) }>
+    <section className={ cn(props.className) } id={props.id}>
       <h2 className='section-title'>
         {props.title}
       </h2>

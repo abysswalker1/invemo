@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/app/components/common/links/SmallLink.tsx"  ],
+, "src/app/components/ui/links/SmallLink.tsx"  ],
   "exclude": [
     "node_modules"
   ]

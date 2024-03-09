@@ -6,11 +6,11 @@ export interface IWithClass {
 
 export interface ILink {
   href: string
-  text: string
+  text?: string
 }
 
 export interface IListItem extends IWithClass{
-  image: string
+  image: string | StaticImageData
   firstString: string
-  secondString: string 
+  secondString?: string 
 }

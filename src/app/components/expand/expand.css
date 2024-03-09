@@ -1,0 +1,37 @@
+.expand {
+  max-height: 255px;
+  transition: max-height 0.3s;
+  padding: 30px;
+  border: 1px solid #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.expand-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+.expand.opened {
+  max-height: 2000px
+}
+
+.expand.opened .expand-btn__arrow {
+  rotate: 180deg;
+}
+
+.expand_overlay {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: linear-gradient(180deg, transparent 70%,#fff 100% );
+}
+
+.expand.opened .expand_overlay {
+  display: none;
+}

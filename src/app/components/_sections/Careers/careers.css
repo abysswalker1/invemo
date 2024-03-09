@@ -1,0 +1,44 @@
+.careers {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.careers-expand {
+  flex: 1;
+}
+
+.careers-expand__list {
+  margin-bottom: 30px;
+}
+
+.careers-expand__list p:before {
+  content: '→';
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.careers-expand__link {
+  max-width: 300px;
+}
+
+@media screen and (max-width: 1200px) {
+  .careers {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .careers-expand {
+    padding: 20px;
+  }
+
+  .careers-expand__link {
+    max-width: 160px;
+  }
+
+  .careers-expand__link .red-button-link {
+    height: 65px;
+  }
+}

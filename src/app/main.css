@@ -4,6 +4,13 @@
   min-height: 100vh;
   background-color: #fff;
   z-index: 3;
+  padding-bottom: 60px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -12,6 +19,8 @@
   } 
 }
 
-@media screen and (max-width: 767px) {
-  
+@media screen and (max-width: 500px) {
+  .main_content {
+    padding-bottom: 40px;
+  }
 }
