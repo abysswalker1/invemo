@@ -1,8 +1,8 @@
 import {FC} from 'react';
-import Section from '../../ui/section/Section';
+import Section from '../../section/Section';
 import Expand from '../../expand/Expand';
 import './careers.css';
-import RedButtonLink from '../../ui/links/RedButtonLink';
+import RedButtonLink from '../../links/RedButtonLink';
 import {getData} from './data';
 
 type CareersList = {

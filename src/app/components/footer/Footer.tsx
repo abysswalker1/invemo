@@ -1,13 +1,10 @@
 import {FC} from 'react';
-import Logo from '../ui/logo/Logo';
+import Logo from '../logo/Logo';
 import {getData} from './data';
-import SmallLink from '../ui/links/SmallLink';
+import SmallLink from '../links/SmallLink';
 import { ILink } from '../../types';
 import './footer.css';
-import Image from 'next/image';
-import LinkWrap from '../ui/links/LinkWrap';
-import in_logo from "/public/invemo_in.svg";
-import medium_logo from "/public/invemo_medium.svg";
+import Socials from '../socials/Socials';
 
 type Data = {
   pageLinks: ILink[],
@@ -31,15 +28,7 @@ const Footer: FC = () => {
           <SmallLink {...link} className='footer-links__link footer-modal-link'/>
         ))}
       </div>
-      <div className="footer-socials">
-        <SmallLink text="info@invemo.ch" href="mailto:info@invemo.ch" className='footer-socials__email'/>
-        <LinkWrap href="#">
-          <Image src={in_logo} alt='' />
-        </LinkWrap>
-        <LinkWrap href="#">
-          <Image src={medium_logo} alt='' />
-        </LinkWrap>
-      </div>
+      <Socials className='footer-socials'/>
       <SmallLink text="info@invemo.ch" href="mailto:info@invemo.ch" className='footer-socials__email_mobile'/>
     </footer>
   );

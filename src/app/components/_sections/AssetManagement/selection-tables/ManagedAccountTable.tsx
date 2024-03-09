@@ -1,5 +1,5 @@
 import {FC} from 'react';
-import Table, { TableRow } from '../../../ui/table/Table';
+import Table, { TableRow } from '../../../table/Table';
 
 const ManagedAccountTable: FC = () => {
   const rows: TableRow[] = [

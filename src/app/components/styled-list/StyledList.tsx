@@ -1,5 +1,5 @@
 import {FC} from 'react';
-import { IWithClass, IListItem } from '../../../types';
+import { IWithClass, IListItem } from '../../types';
 import cn from 'classnames';
 import './styled-list.css';
 import Image from 'next/image';

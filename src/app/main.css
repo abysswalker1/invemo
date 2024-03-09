@@ -5,6 +5,7 @@
   background-color: #fff;
   z-index: 3;
   padding-bottom: 60px;
+  padding-top: 120px;
 }
 
 .main-container {
@@ -17,6 +18,12 @@
   .main_content {
     margin-top: 700px;
   } 
+}
+
+@media screen and (max-width: 767px) {
+  .main_content {
+    padding-top: 50px;
+  }
 }
 
 @media screen and (max-width: 500px) {

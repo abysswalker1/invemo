@@ -1,7 +1,7 @@
 import { ReactNode, FC } from 'react';
 import cn from 'classnames';
 import './links.css';
-import { ILink, IWithClass } from '../../../types';
+import { ILink, IWithClass } from '../../types';
 
 export interface Props extends ILink, IWithClass {
   children?: ReactNode

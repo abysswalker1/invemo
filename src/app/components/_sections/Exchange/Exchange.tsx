@@ -1,12 +1,12 @@
 import {FC} from 'react';
-import Section from '../../ui/section/Section';
+import Section from '../../section/Section';
 import './exchange.css';
 import { IListItem } from '../../../types';
 import first from '/public/exchange1.svg';
 import second from '/public/exchange2.svg';
 import third from '/public/exchange3.svg';
 import fourth from '/public/exchange4.svg';
-import StyledList from '../../ui/styled-list/StyledList';
+import StyledList from '../../styled-list/StyledList';
 import topImage from '/public/exchange-top-image.jpg';
 import bottomImage from '/public/exchange-bottom-image.svg';
 import Image from 'next/image';
@@ -19,7 +19,7 @@ const Exchange: FC = () => {
     {image: fourth, firstString: 'SWIFT & SEPA transfers'},
   ]
   return (
-    <Section title="Exchange" id="exchange-section">
+    <Section title="Exchange" id="exchange">
       <div className="exchange">
         <div className="exchange-info">
           <p className='paragraph'>Access institutional-grade exchange services and benefit from best execution and deep liquidity.</p>

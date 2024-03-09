@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import cn from 'classnames';
-import { IWithClass } from '../../../types';
+import { IWithClass } from '../../types';
 import './table.css';
 
 export type TableRow = {

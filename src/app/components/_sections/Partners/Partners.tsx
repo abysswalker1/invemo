@@ -1,6 +1,6 @@
 import {FC} from 'react';
 import './partners.css';
-import Section from '../../ui/section/Section';
+import Section from '../../section/Section';
 import { StaticImageData } from 'next/image';
 import Image from 'next/image';
 import first from '/public/copper.png' 
@@ -25,7 +25,7 @@ const Partnersitem: FC<PartnersItemProps> = ({ image }) => {
 const Partners: FC = () => {
   const images = [first, second, third, fourth, fifth, sixth];
   return (
-    <Section title='Partners & Providers' id='partners section'>
+    <Section title='Partners & Providers' id='partners'>
       <div className="partners">
         {images.map(image => {
           return <Partnersitem image={image}/>

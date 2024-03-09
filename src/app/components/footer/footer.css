@@ -27,18 +27,15 @@ footer {
 }
 
 .footer-socials {
-  display: flex;
-  align-items: center;
   align-self: start;
-  gap: 30px;
   justify-self: end;
 }
 
-.footers-socials__email {
+.footer-socials .socials-email {
   margin-right: 10px;
 }
 
-.footers-socials__email_mobile {
+.footer-socials__email_mobile {
   display: none;
 }
 
@@ -86,11 +83,11 @@ footer {
     padding-right: 8px;
   }
 
-  .footer-socials__email {
+  .footer-socials .socials-email {
     display: none;
   }
 
-  .footers-socials__email_mobile {
+  .footer-socials__email_mobile {
     display: block;
     grid-column: 1 / 3;
   }

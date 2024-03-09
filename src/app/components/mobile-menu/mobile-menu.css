@@ -1,10 +1,33 @@
-.burger-btn {
-  display: none;
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 1px solid #000;
+  padding: 17px 26px;
+  background-color: #fff;
 }
 
+.mobile-menu__socials {
+  flex-wrap: wrap;
+}
 
-@media screen and (max-width: 1200px) {
-  .burger-btn {
-    display: block;
+.mobile-menu__socials .socials-email {
+  order: 3;
+  width: 100%;
+  opacity: 0.5;
+}
+
+.mobile-menu__navigation {
+  margin-bottom: 20px;
+}
+
+.mobile-menu__navigation .small-link {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    max-width: 200px;
+    font-size: 12px;
   }
 }

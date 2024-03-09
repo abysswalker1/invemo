@@ -7,3 +7,14 @@ header .container {
   justify-content: space-between;
   align-items: center;
 }
+
+.header-navigation {
+  display: flex;
+  gap: 45px;
+}
+
+@media screen and (max-width: 1200px) {
+  .header-navigation {
+    display: none;
+  }
+}

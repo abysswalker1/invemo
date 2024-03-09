@@ -1,7 +1,7 @@
 import React, {ReactNode, FC} from 'react';
 import cn from 'classnames';
 import './section.css';
-import { IWithClass } from '../../../types';
+import { IWithClass } from '../../types';
 
 interface Props extends IWithClass {
   title: string

@@ -1,0 +1,10 @@
+.burger-btn {
+  display: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .burger-btn {
+    display: block;
+  }
+}

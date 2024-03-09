@@ -1,5 +1,5 @@
 import {FC} from 'react';
-import StyledList from '../../../ui/styled-list/StyledList';
+import StyledList from '../../../styled-list/StyledList';
 import first from '/public/infr1.svg';
 import second from '/public/infr2.svg';
 import third from '/public/infr3.svg';

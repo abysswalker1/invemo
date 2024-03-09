@@ -1,6 +1,6 @@
 'use client';
 import {FC} from 'react';
-import Section from '../../ui/section/Section';
+import Section from '../../section/Section';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import {object, string, number} from 'yup';
 

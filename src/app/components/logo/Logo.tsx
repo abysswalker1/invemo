@@ -5,7 +5,7 @@ import logoImg from '/public/Frame.svg';
 import logoText from '/public/Invemo.svg';
 
 import './logo.css';
-import { IWithClass } from '../../../types';
+import { IWithClass } from '../../types';
 
 const Logo: FC<IWithClass> = ({ className }) => {
   return (

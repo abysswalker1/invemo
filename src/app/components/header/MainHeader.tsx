@@ -1,21 +1,18 @@
 import {FC} from 'react';
 import Header from "./Header";
-import Logo from "../ui/logo/Logo";
-import Nav from "./nav/Nav";
+import Logo from "../logo/Logo";
+import Nav from "../nav/Nav";
+import { getLinks } from './mainNavLinks';
+import BurgerMenuButton from '../burder-menu-button/BurgerMenuButton';
 
 const MainHeader: FC = () => {
-  const mainLinks = [
-    {text: 'Asset Menagement', href: '#'},
-    {text: 'Exchange', href: '#'},
-    {text: 'Parthners & Providers', href: '#'},
-    {text: 'Contact', href: '#'},
-    {text: 'DeFi Vault', href: '#'},
-  ]
+  const links = getLinks();
 
   return (
     <Header>
       <Logo />
-      <Nav links={mainLinks}/>  
+      <Nav links={links} className='header-navigation'/>  
+      <BurgerMenuButton />
     </Header>
   );
 };

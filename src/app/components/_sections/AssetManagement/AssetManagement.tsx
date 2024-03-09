@@ -1,5 +1,5 @@
 import {FC} from 'react';
-import Section from '../../ui/section/Section';
+import Section from '../../section/Section';
 import Image from 'next/image';
 import assetImage from '/public/asset-image.svg'
 import firstGraph from '/public/asset-graph-1.svg';
@@ -11,14 +11,14 @@ import MovingImage from './../../moving-image/MovingImage';
 import InfrastructureList from './styled-lists/InfrastructureList';
 import onboardinImage from '/public/onboarding-image.png';
 import OnboardingList from './styled-lists/OnboardingList';
-import RedButtonLink from '../../ui/links/RedButtonLink';
+import RedButtonLink from '../../links/RedButtonLink';
 import StructuredNoteTable from './selection-tables/StructuredNoteTable';
 import ManagedAccountTable from './selection-tables/ManagedAccountTable';
 
 const AssetManagement: FC = () => {
 
   return (
-    <Section title="Asset Management" id='asset-management-section'>
+    <Section title="Asset Management" id='asset-management'>
       <div className="asset">
 
         <div className='asset-strategies asset_section'>
@@ -73,7 +73,7 @@ const AssetManagement: FC = () => {
             <StructuredNoteTable />
             <ManagedAccountTable />
           </div>
-          <RedButtonLink href='/' text="Contact us" className='selection-link'/>
+          <RedButtonLink href='#contact' text="Contact us" className='selection-link'/>
         </div>
       </div>
     </Section>

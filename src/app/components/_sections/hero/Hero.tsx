@@ -1,6 +1,6 @@
 import {FC} from 'react';
 import MainHeader from '../../header/MainHeader';
-import RedButtonLink from '../../ui/links/RedButtonLink';
+import RedButtonLink from '../../links/RedButtonLink';
 import Bg from '/public/hero.jpg';
 import Image from 'next/image';
 
@@ -21,8 +21,8 @@ const Hero: FC = () => {
           </div>
 
           <div className="hero-links">
-            <RedButtonLink className='hero-links__item' text="Send Inquiry" href="#" />
-            <RedButtonLink className='hero-links__item' text="Learn more" href="#" />
+            <RedButtonLink className='hero-links__item' text="Send Inquiry" href="#contact" />
+            <RedButtonLink className='hero-links__item' text="Learn more" href="#asset-management" />
           </div>
         </div>
       </div>
